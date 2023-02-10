@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from "./Components/Nav";
+import Card from "./Components/Card";
 
+let data = {
+  title1: "Hello",
+  link: "https://www.youtube.com/embed/WdsaSSevPOs",
+  headtitle: "ddjgbn",
+  desc: "wgsygho",
+  btn: "sgvybn",
+};
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav />
+      <div className="mainbg">
+        <img src="\public\pb.png" alt="" />
+      </div>
+      {/* <div className="container1 d-flex p-2">
+        <Card obj={data} />
+        <Card obj={data} />
+        <Card obj={data} />
+        <Card obj={data} />
+        <Card obj={data} />
+        <Card obj={data} />
+      </div> */}
+    </>
   );
 }
 
