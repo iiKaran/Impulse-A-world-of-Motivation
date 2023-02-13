@@ -2,7 +2,7 @@ import React from "react";
 
 export default function card(props) {
   return (
-    <div className="card">
+    <div className="card flex-item*">
       <iframe
         src={props.obj.link}
         title={props.obj.title1}

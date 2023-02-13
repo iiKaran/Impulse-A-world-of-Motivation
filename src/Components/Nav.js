@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary ">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          GetBest
+        <a className="navbar-brand" href="/" id="logo">
+          Imp<span>U</span>lse
         </a>
         <button
           className="navbar-toggler"
@@ -21,19 +21,19 @@ export default function Nav() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a className="nav-link active" aria-current="page" href="/">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/">
                 About
               </a>
             </li>
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="/"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -42,12 +42,12 @@ export default function Nav() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Study Rekated
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Motivational's
                   </a>
                 </li>
@@ -55,17 +55,17 @@ export default function Nav() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Fun & Entertainment
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Devotional's
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Blogs
                   </a>
                 </li>
