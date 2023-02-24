@@ -261,6 +261,9 @@ span{
 .main-cont > div {
   /* border: 2px solid red ; */
 }
+.right-cont h1{
+   font-size: 4rem;
+}
 h1{
   text-align: center;
   padding: 13px;
@@ -297,12 +300,14 @@ h1{
 .right-cont{
   flex-basis: 90%;
 }
-h3{
+h1{
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Fasthand', cursive;
+  /* font-family: 'Times New Roman', Times, serif; */
   font-weight: 300;
   font-size: 2rem;
   margin-top: 14px;
+  text-transform: capitalize;
 }
 .main-cont{
   /* border-top: none; */
@@ -362,3 +367,43 @@ html{
 .row-item p {
   padding: 9px;
 }
+.chart-row{
+  display:  flex;
+  /* width: 95vw; */
+  margin: auto;
+  
+  margin-bottom: 12px;
+  margin-top: 30px;
+  gap: 8px;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+} 
+.chart-item{
+  flex-basis: 30%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 12px;
+  background-color: #282c34;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all .6s;
+ }
+
+ .chart-item p {
+  padding: 14px;
+  text-align: left;
+  color: white;
+ }
+ .chart-item img{
+  border-radius: 50%;
+  height: 120px;
+ }
+ .name{
+  /* font-family:; */
+  font-family: 'Fasthand', cursive;
+ }
+ .chart-item:hover{
+  background-color: rgba(128, 247, 8, 0.949);
+ }

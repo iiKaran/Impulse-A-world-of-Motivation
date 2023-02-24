@@ -4,6 +4,7 @@ import Card from "./Components/Card";
 import Main from "./Components/Main";
 import Subhead from "./Components/Subhead";
 import Mark from "./Components/Mark";
+import Chartrow from "./Components/Chartrow";
 import Footer from "./Components/Footer";
 
 // import Mark from "./Components/Mark";
@@ -71,7 +72,7 @@ function App() {
     <>
       <Nav />
       <Main />
-      <Subhead head="Daily Dose" />
+      <Subhead head="Daily Dose"  />
       <Mark />
       <div className="vid-row">{dailyDose.map((data) => {
         return (
@@ -82,9 +83,28 @@ function App() {
         )
       })}
       </div>
-      <Subhead head="A world of Start Up" />
+      <Subhead head="world of Start Up" id="startUp" />
       <Mark />
       <div className="vid-row">{startUp.map((data) => {
+        return (
+          <div className="row-item">
+             <Card obj = {data}/>
+          </div>
+        )
+      })}
+      </div>
+      <div className='chart-row'>
+      <Chartrow  name ="Sandeep Maheshwari" src="https://www.ajabgjab.com/wp-content/uploads/2020/09/Sandeep-Maheshwari-53.jpg" desc= "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet in nisi iste ad ex dolorum recusandae molestias, minus voluptate qui sapiente libero magni, voluptatum reiciendis labore, autem dicta delectus! Ducimus"/>
+      <Chartrow name ="Steve Harvey" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHBgrcHX7EzUl9pTKGnDbp2s4_oYFWetaqVQ&usqp=CAU" desc= "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet in nisi iste ad ex dolorum recusandae molestias, minus voluptate qui sapiente libero magni, voluptatum reiciendis labore, autem dicta delectus! Ducimus" />
+      <Chartrow  name ="Vivek Bindra" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9EOqUra8BJC2y1pnfQQRZt4E4u8zNPplPqA&usqp=CAU" desc= "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet in nisi iste ad ex dolorum recusandae molestias, minus voluptate qui sapiente libero magni, voluptatum reiciendis labore, autem dicta delectus! Ducimus" />
+      <Chartrow  name ="Sandeep Maheshwari" src="https://www.ajabgjab.com/wp-content/uploads/2020/09/Sandeep-Maheshwari-53.jpg" desc= "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet in nisi iste ad ex dolorum recusandae molestias, minus voluptate qui sapiente libero magni, voluptatum reiciendis labore, autem dicta delectus! Ducimus"/>
+      <Chartrow name ="Steve Harvey" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHBgrcHX7EzUl9pTKGnDbp2s4_oYFWetaqVQ&usqp=CAU" desc= "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet in nisi iste ad ex dolorum recusandae molestias, minus voluptate qui sapiente libero magni, voluptatum reiciendis labore, autem dicta delectus! Ducimus" />
+      <Chartrow  name ="Vivek Bindra" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9EOqUra8BJC2y1pnfQQRZt4E4u8zNPplPqA&usqp=CAU" desc= "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet in nisi iste ad ex dolorum recusandae molestias, minus voluptate qui sapiente libero magni, voluptatum reiciendis labore, autem dicta delectus! Ducimus" />
+
+      </div>
+      <Subhead head="Life Lesson's" id="Life"/>
+      <Mark />
+      <div className="vid-row"  >{dailyDose.map((data) => {
         return (
           <div className="row-item">
              <Card obj = {data}/>
@@ -93,10 +113,6 @@ function App() {
         )
       })}
       </div>
-      <Subhead head="Life Lesson's" />
-      <Mark />
-      <Subhead head="Life Changing Seminar's"/>
-      <Mark />
 
       <Footer />
     </>
