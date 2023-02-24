@@ -38,6 +38,35 @@ function App() {
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente eveniet aliquid architecto ratione voluptas, quasi tempora corp"
   }
   ];
+  const startUp =[{
+    src : "https://www.youtube.com/embed/gr7ZBqlsuHU",
+    tittle : "Bussiness VS StartUp",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente eveniet aliquid architecto ratione voluptas, quasi tempora corp"
+   },{
+     src: "https://www.youtube.com/embed/H9ygAJ3dcqE",
+     tittle:"The First Step",
+     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente eveniet aliquid architecto ratione voluptas, quasi tempora corp"
+   },
+   {
+     src: "https://www.youtube.com/embed/wMUStCZhinM",
+     tittle:"The Secrets",
+     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente eveniet aliquid architecto ratione voluptas, quasi tempora corp"
+   },
+   {
+     src: "https://www.youtube.com/embed/aMJluITqm6g",
+     tittle:"Talk About Bussiness",
+     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente eveniet aliquid architecto ratione voluptas, quasi tempora corp"
+   },{
+     src: "https://www.youtube.com/embed/tWzakqerPUw",
+     tittle:"Game Changer Protocol !",
+     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente eveniet aliquid architecto ratione voluptas, quasi tempora corp"
+   },
+   {
+     src: "https://www.youtube.com/embed/sP5c-sPJUu0",
+     tittle:"10 Min Kick Start",
+     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente eveniet aliquid architecto ratione voluptas, quasi tempora corp"
+   }
+   ];
   return (
     <>
       <Nav />
@@ -51,9 +80,19 @@ function App() {
           </div>
          
         )
-      })}</div>
+      })}
+      </div>
       <Subhead head="A world of Start Up" />
       <Mark />
+      <div className="vid-row">{startUp.map((data) => {
+        return (
+          <div className="row-item">
+             <Card obj = {data}/>
+          </div>
+         
+        )
+      })}
+      </div>
       <Subhead head="Life Lesson's" />
       <Mark />
       <Subhead head="Life Changing Seminar's"/>

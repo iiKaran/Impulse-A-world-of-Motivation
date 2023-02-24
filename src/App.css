@@ -359,3 +359,6 @@ h3{
 html{
   scroll-behavior: smooth;
 }
+.row-item p {
+  padding: 9px;
+}
