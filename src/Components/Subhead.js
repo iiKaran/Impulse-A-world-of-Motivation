@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Subhead() {
+export default function Subhead(props) {
   return (
     <div>
-      <h1>Heading is here</h1>
+      <h3>{props.head}</h3>
     </div>
   )
 }
